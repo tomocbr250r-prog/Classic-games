@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>BLOCK PUZZLE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="display">
+      <div id="title-screen" class="title-screen">
+        <h1>TETRIS</h1>
+        <p class="blink">PRESS ENTER / TOUCH</p>
+      </div>
+
+      <canvas id="tetris" width="160" height="320"></canvas>
+      
+      <div class="sidebar">
+        <div class="box">
+          <h2>NEXT</h2>
+          <canvas id="next" width="64" height="64"></canvas>
+        </div>
+        <div class="box">
+          <h2>SCORE</h2>
+          <p id="score">0</p>
+        </div>
+        <div class="box">
+          <h2>LINES</h2>
+          <p id="lines">0</p>
+        </div>
+        <div class="box">
+          <h2>LEVEL</h2>
+          <p id="level">1</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 操作ボタン（シンプルデザイン） -->
+    <div id="touch-controls" class="touch-controls">
+      <div class="ctrl-row">
+        <button id="btn-rotate" class="ctrl-btn wide">ROTATE</button>
+        <button id="btn-drop" class="ctrl-btn wide accent">DROP</button>
+      </div>
+      <div class="ctrl-row">
+        <button id="btn-left" class="ctrl-btn">←</button>
+        <button id="btn-down" class="ctrl-btn">↓</button>
+        <button id="btn-right" class="ctrl-btn">→</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
